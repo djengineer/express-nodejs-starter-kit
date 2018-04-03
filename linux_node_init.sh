@@ -12,7 +12,7 @@
 # install nodejs 8
 sudo nvm install 8
 # update  npm
-npm i -g npm
+sudo npm i -g npm
 # install EXPRESS4
 sudo npm install --save express-generator
 # install embedded js (ejs)
