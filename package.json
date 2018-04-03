@@ -1,16 +1,26 @@
 {
   "name": "myapp",
   "version": "1.0.0",
-  "description": "",
+  "description": "Date updated: 03 April 2018",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
     "ejs": "^2.5.8",
+    "express": "^4.16.3",
     "express-generator": "^4.16.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djengineer/express-nodejs-starter-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/djengineer/express-nodejs-starter-kit/issues"
+  },
+  "homepage": "https://github.com/djengineer/express-nodejs-starter-kit#readme"
 }

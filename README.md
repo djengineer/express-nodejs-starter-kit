@@ -9,11 +9,6 @@ This is a basic template to jumpstart lightweight Node.js webapps using the Expr
 This template also includes examples on how to parse data to the EJS frontend, templating and Rest elements
 
 ## Installation:
-- Move the linux bash file to your root workspace folder where your node is installed
-- Run script
-
-or
-
-If you have the the node_modules in some folder like in the kit, you should change the path of the required modules in server.js
-Because the path has been changed, be aware that this may affect your deployments, depending on your setup.
-
+- Pull the files into a root working directory
+- Run the linux bash scripts
+- During npm init, enter the relevant details. It is possible to just leave it blank and hit enter. Do so for the details that will be prompted.
