@@ -12,3 +12,8 @@ This template also includes examples on how to parse data to the EJS frontend, t
 - Pull the files into a root working directory
 - Run the linux bash scripts
 - During npm init, enter the relevant details. It is possible to just leave it blank and hit enter. Do so for the details that will be prompted.
+
+## Running the server:
+```
+node server.js
+```
