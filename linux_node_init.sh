@@ -8,9 +8,9 @@
 # Date: yyyymmdd - ee   (ee = times edited)
 # Date: 20180403 - 01
 # 
-# Purpose: run update scripts to initialize system environment to run node.js nodejs-starter-kit
+# Purpose: run update scripts to initialize system environment to run node.js express-nodejs-starter-kit
 # 
-# Assuming we have cloud9 node environment
+# Assuming you have NVM installed
 # install nodejs 8
 nvm install 8
 # update  npm
