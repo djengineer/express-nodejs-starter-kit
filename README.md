@@ -14,5 +14,6 @@ This template also includes examples on how to parse data to the EJS frontend, t
 
 or
 
-If you have the the node_modules in some folder like in the kit, you should change the path of the required modules in server.sj
+If you have the the node_modules in some folder like in the kit, you should change the path of the required modules in server.js
+Because the path has been changed, be aware that this may affect your deployments, depending on your setup.
 
