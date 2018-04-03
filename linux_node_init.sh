@@ -12,11 +12,13 @@
 # 
 # Assuming we have cloud9 node environment
 # install nodejs 8
-sudo nvm install 8
+nvm install 8
 # update  npm
 sudo npm i -g npm
-# install EXPRESS4
-sudo npm install --save express-generator
+# initialize npm
+sudo npm init
+# install EXPRESS
+sudo npm install --save express
 # install embedded js (ejs)
 sudo npm install ejs --save
 # install body parser
