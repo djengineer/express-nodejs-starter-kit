@@ -12,4 +12,7 @@ This template also includes examples on how to parse data to the EJS frontend, t
 - Move the linux bash file to your root workspace folder where your node is installed
 - Run script
 
+or
+
+If you have the the node_modules in some folder like in the kit, you should change the path of the required modules in server.sj
 
