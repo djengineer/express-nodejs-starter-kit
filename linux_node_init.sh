@@ -1,4 +1,6 @@
-
+. ~/.nvm/nvm.sh
+. ~/.profile
+. ~/.bashrc
 #/usr/bin/bash
 #
 # Script: linux_node_init.sh
