@@ -1,0 +1,54 @@
+<% include ../partials/top.ejs %>
+
+<div class="container">
+        <div class="row">
+            <% if (students.length == 0) { %>
+                <h2>There are no students in DB</h2>
+            <% } %>
+            <% for (var i = 0; i < students.length; i++) { %>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <!-- profile photo here -->
+                        <!--<img src="<%= students[i].profile_photo %>">-->
+                        <div class="caption">
+                            <h3><%= students[i].name %></h3>
+                            <p><%= students[i].age %></p>
+                            <p>$<%= students[i].gender %></p>
+                        </div>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+        
+            <% if (pages > 0) { %>
+                <ul class="pagination text-center">
+                    <% if (current == 1) { %>
+                        <li class="page-item disabled"><a class="page-link" >First</a></li>
+                    <% } else { %>
+                        <li class="page-item"><a class="page-link" href="/students/1">First</a></li>
+                    <% } %>
+                    <% var i = (Number(current) > 5 ? Number(current) - 4 : 1) %>
+                    <% if (i !== 1) { %>
+                        <li class=" page-item disabled"><a>...</a></li>
+                    <% } %>
+                    <% for (; i <= (Number(current) + 4) && i <= pages; i++) { %>
+                        <% if (i == current) { %>
+                        <!--active page-->
+                            <li class="page-item active"><a  class="page-link"><%= i %></a></li>
+                        <% } else { %>
+                            <li class="page-item"><a  class="page-link" href="/students/<%= i %>"><%= i %></a></li>
+                        <% } %>
+                        <% if (i == Number(current) + 4 && i < pages) { %>
+                            <li class="page-item disabled"><a>...</a></li>
+                        <% } %>
+                    <% } %>
+                    <% if (current == pages) { %>
+                        <li class="page-item disabled"><a class="page-link" >Last</a></li>
+                    <% } else { %>
+                        <li><a  class="page-link" href="/students/<%= pages %>">Last</a></li>
+                    <% } %>
+                </ul>
+            <% } %>
+            
+</div><!--end container-->
+<% include ../partials/bottom.ejs %>

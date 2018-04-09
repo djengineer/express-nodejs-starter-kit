@@ -17,3 +17,17 @@ This template also includes examples on how to parse data to the EJS frontend, t
 ```
 node server.js
 ```
+
+## Mongodb Server
+```
+// after installing mongodb from the linux scripts, use mongod for the mongodb server
+mongod
+
+// for mongodb shell, use mongo 
+mongo
+```
+## Model-View-Controller in the starter-kit
+In the starter kit, we are using Students as models, routes in this case would be the controller in MVC.
+
+## Auth0
+Auth0 integration is included
